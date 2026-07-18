@@ -48,12 +48,12 @@ Goals, in priority order:
 ## Repository layout
 
 ```
-sg-couture-mobile/
+sg-mobile-app/
 ├── app.json / eas.json
 ├── CLAUDE.md                     ← rules for Claude Code (repo root)
 ├── docs/
-│   ├── api/                      ← the backend integration guide (copied, read-only)
-│   └── dev-plan/                 ← this plan
+│   ├── integration/storefront/   ← the backend integration guide (copied, read-only)
+│   └── *.md                      ← this plan (README, architecture, conventions, phase docs)
 └── src/
     ├── app/                      ← Expo Router routes ONLY (thin files)
     │   ├── _layout.tsx           ← providers: Clerk → QueryClient → theme

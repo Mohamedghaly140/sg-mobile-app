@@ -2,7 +2,7 @@
 
 **Objective:** a running Expo app with the full infrastructure skeleton — navigation shell, API client with interceptors, query client, stores, theme tokens, shared components — such that every later phase only adds feature modules.
 
-**Prerequisites:** backend reachable in a dev environment; Clerk publishable key (test instance); `docs/api/` copied into the repo.
+**Prerequisites:** backend reachable in a dev environment; Clerk publishable key (test instance); `docs/integration/storefront/` copied into the repo.
 
 **API surface:** none consumed yet beyond a smoke call; this phase implements everything `01-conventions.md` §1–§3 describes.
 
@@ -10,7 +10,7 @@
 
 ### 0.1 Project scaffold
 - [ ] `create-expo-app` (latest SDK, TypeScript template), strict `tsconfig`, path alias `@/* → src/*`.
-- [ ] ESLint + Prettier (expo config base); `npm run lint`, `typecheck`, `test` scripts.
+- [ ] ESLint + Prettier (expo config base); `bun run lint`, `typecheck`, `test` scripts.
 - [ ] `app.config.ts` reading `EXPO_PUBLIC_API_URL`, `EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY`; `.env.example` committed.
 - [ ] Directory skeleton exactly as `00-architecture.md` — create empty feature folders with `index.ts` placeholders so structure is enforced from day one.
 

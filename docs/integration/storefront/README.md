@@ -10,9 +10,9 @@ This folder is the frontend-facing integration guide for every storefront API. I
 
 | Doc | Role |
 |---|---|
-| [`../../API_SPECIFICATION.md`](../../API_SPECIFICATION.md) | **Authoritative** backend contract (storefront + admin, backend-maintained). If this guide ever disagrees with the implementation, report the drift. |
+| `API_SPECIFICATION.md` — lives in the backend repo (`sg-couture-api`), not copied here | **Authoritative** backend contract (storefront + admin, backend-maintained). If this guide ever disagrees with the implementation, report the drift. |
 | Swagger UI at **`/api/docs`** | Interactive OpenAPI reference generated from code. Raw OpenAPI JSON is at `/api/docs-json`. Use it to try requests with a Clerk Bearer token. |
-| [`../../FEATURES.md`](../../FEATURES.md) | Business rules behind carts, coupons, checkout, stock, and order lifecycles. |
+| `FEATURES.md` — lives in the backend repo (`sg-couture-api`), not copied here | Business rules behind carts, coupons, checkout, stock, and order lifecycles. |
 | [`../admin/`](../admin/) | Separate admin-dashboard integration guide. |
 
 ## Read this first

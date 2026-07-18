@@ -25,7 +25,7 @@
 ### 7.4 Security & privacy sweep
 - [ ] Grep-audit: no Clerk JWT or `sessionToken`/claim token in logs, analytics, Sentry breadcrumbs, or URLs (claim token appears in the deep-link URL by necessity — scrub it from any logging/reporting layer).
 - [ ] SecureStore keys inventory documented; verify tokens cleared on the three lifecycle events (merge, guest checkout, clear).
-- [ ] Dependency audit (`npx expo-doctor`, `npm audit`).
+- [ ] Dependency audit (`bunx expo-doctor`, `bun audit`).
 
 ### 7.5 Accessibility
 - [ ] Labels/roles on interactive elements; hit-slop on steppers/hearts; dynamic type spot-check; contrast check once real tokens land; screen-reader pass on the checkout flow specifically.

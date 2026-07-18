@@ -48,7 +48,7 @@ Defaults in `src/lib/query/queryClient.ts`:
 | Setting | Value | Reason |
 |---|---|---|
 | `retry` | custom: never retry `ApiError` with status 4xx; retry ≤ 2 for network/5xx | 4xx are contract answers, not transience |
-| `staleTime` | 60s catalog reads; 0 for cart/orders | catalog counts/stock are hints anyway |
+| `staleTime` | 60s catalog reads; 0 for cart/orders. Near-static data may override upward per feature (categories use 5 min — Phase 1) | catalog counts/stock are hints anyway |
 | `refetchOnWindowFocus` | on (screen focus via `focusManager` + AppState) | replaces polling — orders doc forbids polling loops |
 | mutations `retry` | 0 | throttled routes must not be hammered |
 
